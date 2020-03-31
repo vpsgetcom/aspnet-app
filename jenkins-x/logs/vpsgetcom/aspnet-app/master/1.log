@@ -1,52 +1,122 @@
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-4f78p[0m
-{"level":"warn","ts":1585678485.1493297,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1585678485.1497412,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mvpsgetcom-aspnet-app-master-zd46b-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-7dm2z[0m
+{"level":"warn","ts":1585685893.0813842,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1585685893.0816605,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-slpgb[0m
-{"level":"warn","ts":1585678486.3945942,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1585678486.397354,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mvpsgetcom-aspnet-app-master-zd46b-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-dzzvk[0m
+{"level":"warn","ts":1585685893.4333792,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1585685893.4348114,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mvpsgetcom-aspnet-app-master-zd46b-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-vpsgetcom-aspnet-app-master-v6p95-d7mhk[0m
-{"level":"warn","ts":1585678491.4395761,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1585678492.0936987,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/******com/aspnet-app.git @ v0.0.1 in path /workspace/source"}
+Showing logs for build [32mvpsgetcom-aspnet-app-master-zd46b-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-vpsgetcom-aspnet-app-master-zd46b-shbbj[0m
+{"level":"warn","ts":1585685899.4595766,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1585685900.186417,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/******com/aspnet-app.git @ v0.0.7 in path /workspace/source"}
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:159cd0f0a7fdd52d713ee73a6d47c70ba437f115
+Showing logs for build [32mvpsgetcom-aspnet-app-master-zd46b-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:7a74abc9c0f32182f50552cdce618771dbe0732a
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32mvpsgetcom-aspnet-app-master-zd46b-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
-Command "credential" is deprecated, it will be removed on Jun 1 2020.  This is replaced by Tekton's mounted secrets
-WARNING: failed to find Secret npm-token in namespace **
+Showing logs for build [32mvpsgetcom-aspnet-app-master-zd46b-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image mcr.microsoft.com/dotnet/core/sdk:2.2 
+[36mINFO[0m[0000] Error while retrieving image from cache: getting file info: stat /workspace/sha256:db9b38d066fdbdd5ac5ce862076c27e4ae17f2b57cbacd03bdc3b24e06696ae8: no such file or directory 
+[36mINFO[0m[0000] Downloading base image mcr.microsoft.com/dotnet/core/sdk:2.2 
+[36mINFO[0m[0000] Using files from context: [/workspace/source] 
+[36mINFO[0m[0000] Checking for cached layer 660914637642.dkr.ecr.us-west-2.amazonaws.com/todo/cache:d207d2d551776231bdf65f70d8787d6a2f1a6bc7b6e8f23874f55ee21e4bcc6a... 
+[36mINFO[0m[0000] No cached layer found for cmd RUN dotnet restore 
+[36mINFO[0m[0000] Unpacking rootfs as cmd RUN dotnet restore requires it. 
+[36mINFO[0m[0080] Taking snapshot of full filesystem...        
+[36mINFO[0m[0102] Using files from context: [/workspace/source] 
+[36mINFO[0m[0102] COPY . .                                     
+[36mINFO[0m[0102] Taking snapshot of files...                  
+[36mINFO[0m[0103] WORKDIR /src                                 
+[36mINFO[0m[0103] cmd: workdir                                 
+[36mINFO[0m[0103] Changed working directory to /src            
+[36mINFO[0m[0103] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0103] RUN dotnet restore                           
+[36mINFO[0m[0103] cmd: /bin/sh                                 
+[36mINFO[0m[0103] args: [-c dotnet restore]                    
+  Restore completed in 6.5 sec for /src/aspnetapp-testing/aspnetapp-testing.csproj.
+  Restore completed in 2.18 sec for /src/aspnetapp/aspnetapp.csproj.
+  Restore completed in 4.18 sec for /src/aspnetapp/aspnetapp.csproj.
+[36mINFO[0m[0121] Taking snapshot of full filesystem...        
+[36mINFO[0m[0166] Pushing layer 660914637642.dkr.ecr.us-west-2.amazonaws.com/todo/cache:d207d2d551776231bdf65f70d8787d6a2f1a6bc7b6e8f23874f55ee21e4bcc6a to cache now 
+[36mINFO[0m[0166] RUN dotnet publish aspnetapp/aspnetapp.csproj -c Release -o /app 
+[36mINFO[0m[0166] cmd: /bin/sh                                 
+[36mINFO[0m[0166] args: [-c dotnet publish aspnetapp/aspnetapp.csproj -c Release -o /app] 
+Microsoft (R) Build Engine version 16.0.450+ga8dc7f1d34 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
-npm WARN saveError ENOENT: no such file or directory, open '/workspace/source/package.json'
-npm notice created a lockfile as package-lock.json. You should commit this file.
-npm WARN enoent ENOENT: no such file or directory, open '/workspace/source/package.json'
-npm WARN source No description
-npm WARN source No repository field.
-npm WARN source No README data
-npm WARN source No license field.
+  Restore completed in 105.86 ms for /src/aspnetapp/aspnetapp.csproj.
+  Restore completed in 76.06 ms for /src/aspnetapp/aspnetapp.csproj.
+  aspnetapp -> /src/aspnetapp/bin/Release/netcoreapp2.2/aspnetapp.dll
+  aspnetapp -> /src/aspnetapp/bin/Release/netcoreapp2.2/aspnetapp.Views.dll
+  aspnetapp -> /app/
+[36mINFO[0m[0186] Taking snapshot of full filesystem...        
+[36mINFO[0m[0209] ignoring socket CoreFxPipe_root.hmO7SWqwEv4UbpiDCHUUDAaJc, not adding to tar 
+[36mINFO[0m[0209] ignoring socket CoreFxPipe_root.F.mBSPmB68F+, not adding to tar 
+[36mINFO[0m[0209] RUN dotnet test --logger "trx;LogFileName=./aspnetapp.trx" 
+[36mINFO[0m[0209] cmd: /bin/sh                                 
+[36mINFO[0m[0209] args: [-c dotnet test --logger "trx;LogFileName=./aspnetapp.trx"] 
+[36mINFO[0m[0209] Pushing layer 660914637642.dkr.ecr.us-west-2.amazonaws.com/todo/cache:a285bb9405c2311ca03f7af5bce17bef200afe4bfce2827e0788c26f3cdb9c93 to cache now 
+Test run for /src/aspnetapp-testing/bin/Debug/netcoreapp2.2/aspnetapp-testing.dll(.NETCoreApp,Version=v2.2)
+Microsoft (R) Test Execution Command Line Tool Version 16.0.1
+Copyright (c) Microsoft Corporation.  All rights reserved.
 
-up to date in 0.203s
-found 0 vulnerabilities
+Starting test execution, please wait...
+Results File: /src/aspnetapp-testing/TestResults/./aspnetapp_2020-03-31_20-22-10-022.trx
 
+Total tests: 1. Passed: 1. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 4.7846 Seconds
+[36mINFO[0m[0227] Taking snapshot of full filesystem...        
+[36mINFO[0m[0228] Adding whiteout for /tmp/VBCSCompiler/AnalyzerAssemblyLoader/ce9d26ef38c449cc9c19e83b897ca664 
+[36mINFO[0m[0228] Adding whiteout for /tmp/.dotnet/shm/session1/ce9d26ef38c449cc9c19e83b897ca664 
+[36mINFO[0m[0253] ignoring socket CoreFxPipe_root.F.mBSPmB68F+, not adding to tar 
+[36mINFO[0m[0253] Pushing layer 660914637642.dkr.ecr.us-west-2.amazonaws.com/todo/cache:66561fc0536ed52177158d81cd0ddd4a87f4e1ecff195099e57d72b32597fee6 to cache now 
+[33mWARN[0m[0253] error uploading layer to cache: failed to push to destination 660914637642.dkr.ecr.us-west-2.amazonaws.com/todo/cache:d207d2d551776231bdf65f70d8787d6a2f1a6bc7b6e8f23874f55ee21e4bcc6a: NAME_UNKNOWN: The repository with name 'todo/cache' does not exist in the registry with id '660914637642' 
+[36mINFO[0m[0253] Storing source image from stage 0 at path /kaniko/stages/0 
+[36mINFO[0m[0337] Deleting filesystem...                       
+[36mINFO[0m[0340] Downloading base image mcr.microsoft.com/dotnet/core/aspnet:2.2 
+[36mINFO[0m[0341] Error while retrieving image from cache: getting file info: stat /workspace/sha256:ae9a94a778b4c4656f036e1dd858d6c972f6ad4423bdf9c5022e16f28fee5cf9: no such file or directory 
+[36mINFO[0m[0341] Downloading base image mcr.microsoft.com/dotnet/core/aspnet:2.2 
+[36mINFO[0m[0341] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0341] Taking snapshot of full filesystem...        
+[36mINFO[0m[0342] COPY --from=builder /app .                   
+[36mINFO[0m[0342] Taking snapshot of files...                  
+[36mINFO[0m[0342] ENTRYPOINT ["dotnet", "aspnetapp.dll"]       
+[36mINFO[0m[0342] No files changed in this command, skipping snapshotting. 
+2020/03/31 20:24:05 existing blob: sha256:f3d4c41a4fd13f35c0b46f19a4e27845f4695163cc7174d908ff84836bbc2f5a
+2020/03/31 20:24:05 existing blob: sha256:804555ee037604c40de144f9f8da0d826d38db82f15d74cded32790fe279a8f6
+2020/03/31 20:24:05 existing blob: sha256:970251047358aea56ba6db6975b14ff12470b75de0c2477f4445240ddd727fd4
+2020/03/31 20:24:05 existing blob: sha256:bd391c46585f9f8d84992bbaa9087189148c1601968eaaf097d5b3ed60840e5e
+2020/03/31 20:24:05 pushed blob: sha256:0a6a46c670febe49b27cc562bf1c2a350bf779f542fa4fa5362b1e08804138cb
+2020/03/31 20:24:06 pushed blob: sha256:ba364a1aa6f48a170e589f12f66653c317df906037023c5ba09dc7df2f206300
+2020/03/31 20:24:06 660914637642.dkr.ecr.us-west-2.amazonaws.com/******com/aspnet-app:0.0.7: digest: sha256:37fe221251b07654df03cb26390364f4b2bfcd6eff47c7fd1c57f48ba0944693 size: 1086
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
-npm ERR! path /workspace/source/package.json
-npm ERR! code ENOENT
-npm ERR! errno -2
-npm ERR! syscall open
-npm ERR! enoent ENOENT: no such file or directory, open '/workspace/source/package.json'
-npm ERR! enoent This is related to npm not being able to find a file.
-npm ERR! enoent 
+Showing logs for build [32mvpsgetcom-aspnet-app-master-zd46b-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
 
-npm ERR! A complete log of this run can be found in:
-npm ERR!     /builder/home/.npm/_logs/2020-03-31T18_14_56_496Z-debug.log
+Showing logs for build [32mvpsgetcom-aspnet-app-master-zd46b-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/aspnet-app to an unshallow repository
+Generating change log from git ref d4a0c34c3194052e803eaab5cd09806bc940c02d => e9dd820fe605aa30f33485de6dca7d7a866cbf50
+WARNING: No release found for ******com/aspnet-app and tag v0.0.7 so creating a new release
+Updated the release information at https://github.com/******com/aspnet-app/releases/tag/v0.0.7
+generated: /workspace/source/charts/aspnet-app/templates/release.yaml
+Created Release aspnet-app-0-0-7 resource in namespace **
+Updating PipelineActivity ******com-aspnet-app-master-1 with version 0.0.7
+Updated PipelineActivities ******com-aspnet-app-master-1 with release notes URL: https://github.com/******com/aspnet-app/releases/tag/v0.0.7
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-zd46b-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: chartmuseum.**.138.201.58.182.nip.io http://chartmuseum.**.138.201.58.182.nip.io
+Successfully added Helm repository chartmuseum.**.138.201.58.182.nip.io.
+Uploading chart file aspnet-app-0.0.7.tgz to http://chartmuseum.**.138.201.58.182.nip.io/api/charts
+error: Failed to post chart to http://chartmuseum.**.138.201.58.182.nip.io/api/charts due to response 401: {"error":"unauthorized"}
+Received 401 response: {"error":"unauthorized"}
 [31m
-Pipeline failed on stage 'from-build-pack' : container 'step-build-npm-test'. The execution of the pipeline has stopped.[0m
+Pipeline failed on stage 'from-build-pack' : container 'step-promote-helm-release'. The execution of the pipeline has stopped.[0m
