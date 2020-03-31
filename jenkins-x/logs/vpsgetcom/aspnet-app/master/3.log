@@ -1,0 +1,106 @@
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-nlh6w-3[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-bl9dn[0m
+{"level":"warn","ts":1585679142.171219,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1585679142.1746168,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-nlh6w-3[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-svqs4[0m
+{"level":"warn","ts":1585679143.6075099,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1585679143.6145647,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-nlh6w-3[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-nlh6w-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-vpsgetcom-aspnet-app-master-nlh6w-plcq4[0m
+{"level":"warn","ts":1585679148.6962953,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1585679149.435328,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/******com/aspnet-app.git @ v0.0.3 in path /workspace/source"}
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-nlh6w-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:9abbb3f8265f4c9d5bf9c8d8e483a24cfc57d3fe
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-nlh6w-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-nlh6w-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image mcr.microsoft.com/dotnet/core/sdk:2.2 
+[36mINFO[0m[0000] Error while retrieving image from cache: getting file info: stat /workspace/sha256:db9b38d066fdbdd5ac5ce862076c27e4ae17f2b57cbacd03bdc3b24e06696ae8: no such file or directory 
+[36mINFO[0m[0000] Downloading base image mcr.microsoft.com/dotnet/core/sdk:2.2 
+[36mINFO[0m[0000] Using files from context: [/workspace/source] 
+[36mINFO[0m[0000] Checking for cached layer 660914637642.dkr.ecr.us-west-2.amazonaws.com/todo/cache:22aa2901567bcb40222713b8287759a4b863463b8d868ee4e504fee65940f203... 
+[36mINFO[0m[0000] No cached layer found for cmd RUN dotnet restore 
+[36mINFO[0m[0000] Unpacking rootfs as cmd RUN dotnet restore requires it. 
+[36mINFO[0m[0076] Taking snapshot of full filesystem...        
+[36mINFO[0m[0099] Using files from context: [/workspace/source] 
+[36mINFO[0m[0099] COPY . .                                     
+[36mINFO[0m[0099] Taking snapshot of files...                  
+[36mINFO[0m[0100] WORKDIR /src                                 
+[36mINFO[0m[0100] cmd: workdir                                 
+[36mINFO[0m[0100] Changed working directory to /src            
+[36mINFO[0m[0100] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0100] RUN dotnet restore                           
+[36mINFO[0m[0100] cmd: /bin/sh                                 
+[36mINFO[0m[0100] args: [-c dotnet restore]                    
+  Restore completed in 6.48 sec for /src/aspnetapp-testing/aspnetapp-testing.csproj.
+  Restore completed in 1.83 sec for /src/aspnetapp/aspnetapp.csproj.
+  Restore completed in 4.38 sec for /src/aspnetapp/aspnetapp.csproj.
+[36mINFO[0m[0117] Taking snapshot of full filesystem...        
+[36mINFO[0m[0154] RUN dotnet publish aspnetapp/aspnetapp.csproj -c Release -o /app 
+[36mINFO[0m[0154] cmd: /bin/sh                                 
+[36mINFO[0m[0154] args: [-c dotnet publish aspnetapp/aspnetapp.csproj -c Release -o /app] 
+[36mINFO[0m[0154] Pushing layer 660914637642.dkr.ecr.us-west-2.amazonaws.com/todo/cache:22aa2901567bcb40222713b8287759a4b863463b8d868ee4e504fee65940f203 to cache now 
+Microsoft (R) Build Engine version 16.0.450+ga8dc7f1d34 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 172.44 ms for /src/aspnetapp/aspnetapp.csproj.
+  Restore completed in 75.86 ms for /src/aspnetapp/aspnetapp.csproj.
+  aspnetapp -> /src/aspnetapp/bin/Release/netcoreapp2.2/aspnetapp.dll
+  aspnetapp -> /src/aspnetapp/bin/Release/netcoreapp2.2/aspnetapp.Views.dll
+  aspnetapp -> /app/
+[36mINFO[0m[0176] Taking snapshot of full filesystem...        
+[36mINFO[0m[0202] ignoring socket CoreFxPipe_root.F.mBSPmB68F+, not adding to tar 
+[36mINFO[0m[0202] ignoring socket CoreFxPipe_root.hmO7SWqwEv4UbpiDCHUUDAaJc, not adding to tar 
+[36mINFO[0m[0203] Pushing layer 660914637642.dkr.ecr.us-west-2.amazonaws.com/todo/cache:7b8e650cabb6581344c2bc6c68a7996314794f8fb7853678fe78bb4bf7d4df63 to cache now 
+[36mINFO[0m[0203] RUN dotnet test --logger "trx;LogFileName=./aspnetapp.trx" 
+[36mINFO[0m[0203] cmd: /bin/sh                                 
+[36mINFO[0m[0203] args: [-c dotnet test --logger "trx;LogFileName=./aspnetapp.trx"] 
+Test run for /src/aspnetapp-testing/bin/Debug/netcoreapp2.2/aspnetapp-testing.dll(.NETCoreApp,Version=v2.2)
+Microsoft (R) Test Execution Command Line Tool Version 16.0.1
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: /src/aspnetapp-testing/TestResults/./aspnetapp_2020-03-31_18-29-32-011.trx
+
+Total tests: 1. Passed: 1. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 4.5622 Seconds
+[36mINFO[0m[0219] Taking snapshot of full filesystem...        
+[36mINFO[0m[0220] Adding whiteout for /tmp/.dotnet/shm/session1/77fbe62269e0447d8f5fb232b818a45a 
+[36mINFO[0m[0220] Adding whiteout for /tmp/VBCSCompiler/AnalyzerAssemblyLoader/77fbe62269e0447d8f5fb232b818a45a 
+[36mINFO[0m[0246] ignoring socket CoreFxPipe_root.F.mBSPmB68F+, not adding to tar 
+[36mINFO[0m[0246] Pushing layer 660914637642.dkr.ecr.us-west-2.amazonaws.com/todo/cache:43674021b0ae69f36159f1eb16bb3f4cb90a1027fb7fe733af57f7617e544220 to cache now 
+[33mWARN[0m[0246] error uploading layer to cache: failed to push to destination 660914637642.dkr.ecr.us-west-2.amazonaws.com/todo/cache:22aa2901567bcb40222713b8287759a4b863463b8d868ee4e504fee65940f203: NAME_UNKNOWN: The repository with name 'todo/cache' does not exist in the registry with id '660914637642' 
+[36mINFO[0m[0246] Storing source image from stage 0 at path /kaniko/stages/0 
+[36mINFO[0m[0315] Deleting filesystem...                       
+[36mINFO[0m[0318] Downloading base image mcr.microsoft.com/dotnet/core/aspnet:2.2 
+[36mINFO[0m[0318] Error while retrieving image from cache: getting file info: stat /workspace/sha256:ae9a94a778b4c4656f036e1dd858d6c972f6ad4423bdf9c5022e16f28fee5cf9: no such file or directory 
+[36mINFO[0m[0318] Downloading base image mcr.microsoft.com/dotnet/core/aspnet:2.2 
+[36mINFO[0m[0318] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0318] Taking snapshot of full filesystem...        
+[36mINFO[0m[0319] COPY --from=builder /app .                   
+[36mINFO[0m[0319] Taking snapshot of files...                  
+[36mINFO[0m[0319] ENTRYPOINT ["dotnet", "aspnetapp.dll"]       
+[36mINFO[0m[0319] No files changed in this command, skipping snapshotting. 
+2020/03/31 18:31:12 pushed blob: sha256:095e6ee358018324f15d1e09d69f4aab785f9c61cfabcc6d20879979c48ae81d
+2020/03/31 18:31:12 pushed blob: sha256:a82449ced63be4f07f7b1b97919b9fc5e904ccf0156367914d008b2dd94d6f75
+2020/03/31 18:31:13 pushed blob: sha256:f3d4c41a4fd13f35c0b46f19a4e27845f4695163cc7174d908ff84836bbc2f5a
+2020/03/31 18:31:14 pushed blob: sha256:970251047358aea56ba6db6975b14ff12470b75de0c2477f4445240ddd727fd4
+2020/03/31 18:31:15 pushed blob: sha256:804555ee037604c40de144f9f8da0d826d38db82f15d74cded32790fe279a8f6
+2020/03/31 18:31:17 pushed blob: sha256:bd391c46585f9f8d84992bbaa9087189148c1601968eaaf097d5b3ed60840e5e
+2020/03/31 18:31:17 660914637642.dkr.ecr.us-west-2.amazonaws.com/******com/aspnet-app:0.0.3: digest: sha256:7305ccc87fbd4fe75c438eb5ad12217b9305d09efc146e995edb26ebe24cec68 size: 1086
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-nlh6w-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-nlh6w-3[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+/bin/sh: line 0: cd: /workspace/source/charts/aspnet-app: No such file or directory
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-promote-changelog'. The execution of the pipeline has stopped.[0m
