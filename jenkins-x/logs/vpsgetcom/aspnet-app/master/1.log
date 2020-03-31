@@ -1,0 +1,52 @@
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-4f78p[0m
+{"level":"warn","ts":1585678485.1493297,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1585678485.1497412,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-slpgb[0m
+{"level":"warn","ts":1585678486.3945942,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1585678486.397354,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-vpsgetcom-aspnet-app-master-v6p95-d7mhk[0m
+{"level":"warn","ts":1585678491.4395761,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1585678492.0936987,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/******com/aspnet-app.git @ v0.0.1 in path /workspace/source"}
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:159cd0f0a7fdd52d713ee73a6d47c70ba437f115
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+Command "credential" is deprecated, it will be removed on Jun 1 2020.  This is replaced by Tekton's mounted secrets
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+npm WARN saveError ENOENT: no such file or directory, open '/workspace/source/package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN enoent ENOENT: no such file or directory, open '/workspace/source/package.json'
+npm WARN source No description
+npm WARN source No repository field.
+npm WARN source No README data
+npm WARN source No license field.
+
+up to date in 0.203s
+found 0 vulnerabilities
+
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-v6p95-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+npm ERR! path /workspace/source/package.json
+npm ERR! code ENOENT
+npm ERR! errno -2
+npm ERR! syscall open
+npm ERR! enoent ENOENT: no such file or directory, open '/workspace/source/package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /builder/home/.npm/_logs/2020-03-31T18_14_56_496Z-debug.log
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-npm-test'. The execution of the pipeline has stopped.[0m
