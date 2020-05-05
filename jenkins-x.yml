@@ -3,4 +3,7 @@ pipelineConfig:
   env:
   - name: CHART_REPOSITORY
     value: http://chartmuseum.jx.138.201.58.182.nip.io
-
+  - name: CHARTMUSEUM_CREDS
+    value: credentials('jenkins-x-chartmuseum')
+  - name: DEPLOY_NAMESPACE
+    value: "staging"  
