@@ -2,4 +2,4 @@ buildPack: csharp
 pipelineConfig:
   env:
   - name: CHART_REPOSITORY
-    value: http://chartmuseum.jx.35.164.163.141.nip.io
+    value: http://chartmuseum.jx.138.201.58.182.nip.io
