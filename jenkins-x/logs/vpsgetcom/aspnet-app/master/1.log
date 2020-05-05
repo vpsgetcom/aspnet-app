@@ -1,145 +1,143 @@
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-sfd4x-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-pf84c[0m
-{"level":"warn","ts":1588701388.4452891,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1588701388.445504,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mvpsgetcom-aspnet-app-master-dt48v-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-xk6nw[0m
+{"level":"info","ts":1588708761.5951028,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1588708761.5952625,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-sfd4x-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-h266f[0m
-{"level":"warn","ts":1588701389.131183,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1588701389.1317856,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mvpsgetcom-aspnet-app-master-dt48v-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-95w9g[0m
+{"level":"info","ts":1588708762.1751766,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1588708762.1757786,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-sfd4x-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mvpsgetcom-aspnet-app-master-dt48v-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-sfd4x-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-vpsgetcom-aspnet-app-master-sfd4x-xmk4m[0m
-{"level":"warn","ts":1588701393.1722271,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1588701394.8974352,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/vpsgetcom/aspnet-app.git @ v0.0.14 in path /workspace/source"}
+Showing logs for build [32mvpsgetcom-aspnet-app-master-dt48v-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-vpsgetcom-aspnet-app-master-dt48v-zkvk6[0m
+{"level":"info","ts":1588708769.1783235,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1588708770.8879507,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/vpsgetcom/aspnet-app.git @ v0.0.21 in path /workspace/source"}
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-sfd4x-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:0acb1b31ef7229e703dbc796b156476deb5c9c61
+Showing logs for build [32mvpsgetcom-aspnet-app-master-dt48v-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:0813f197e5f9f134576f001a7fd043d86941f42e
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-sfd4x-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32mvpsgetcom-aspnet-app-master-dt48v-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-sfd4x-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
-[36mINFO[0m[0000] Downloading base image mcr.microsoft.com/dotnet/core/sdk:2.2 
-2020/05/05 17:56:36 No matching credentials were found, falling back on anonymous
-[36mINFO[0m[0000] Error while retrieving image from cache: getting file info: stat /workspace/sha256:db9b38d066fdbdd5ac5ce862076c27e4ae17f2b57cbacd03bdc3b24e06696ae8: no such file or directory 
-[36mINFO[0m[0000] Downloading base image mcr.microsoft.com/dotnet/core/sdk:2.2 
-2020/05/05 17:56:37 No matching credentials were found, falling back on anonymous
-[36mINFO[0m[0000] Using files from context: [/workspace/source] 
-[36mINFO[0m[0000] Checking for cached layer 10.111.50.107:5000/todo/cache:6397cf49e3f37e1b3331565f03edcfdb91cd0ef3dfc0534e2d893f0cdf8ef771... 
-2020/05/05 17:56:37 No matching credentials were found, falling back on anonymous
-[36mINFO[0m[0000] No cached layer found for cmd RUN dotnet restore 
-[36mINFO[0m[0000] Unpacking rootfs as cmd RUN dotnet restore requires it. 
-[36mINFO[0m[0044] Taking snapshot of full filesystem...        
-[36mINFO[0m[0056] Using files from context: [/workspace/source] 
-[36mINFO[0m[0056] COPY . .                                     
-[36mINFO[0m[0056] Taking snapshot of files...                  
-[36mINFO[0m[0056] WORKDIR /src                                 
-[36mINFO[0m[0056] cmd: workdir                                 
-[36mINFO[0m[0056] Changed working directory to /src            
-[36mINFO[0m[0056] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0056] RUN dotnet restore                           
-[36mINFO[0m[0056] cmd: /bin/sh                                 
-[36mINFO[0m[0056] args: [-c dotnet restore]                    
-  Restore completed in 11.33 sec for /src/aspnetapp-testing/aspnetapp-testing.csproj.
-  Restore completed in 1.01 sec for /src/aspnetapp/aspnetapp.csproj.
-  Restore completed in 10.27 sec for /src/aspnetapp/aspnetapp.csproj.
-[36mINFO[0m[0081] Taking snapshot of full filesystem...        
-[36mINFO[0m[0121] Pushing layer 10.111.50.107:5000/todo/cache:6397cf49e3f37e1b3331565f03edcfdb91cd0ef3dfc0534e2d893f0cdf8ef771 to cache now 
-2020/05/05 17:58:38 pushed blob: sha256:af40aa51c1786e676297741c5c9535d5415624c27474a2cd1eeeb8eb445a928a
-[36mINFO[0m[0122] RUN dotnet publish aspnetapp/aspnetapp.csproj -c Release -o /app 
-[36mINFO[0m[0122] cmd: /bin/sh                                 
-[36mINFO[0m[0122] args: [-c dotnet publish aspnetapp/aspnetapp.csproj -c Release -o /app] 
+Showing logs for build [32mvpsgetcom-aspnet-app-master-dt48v-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Resolved base name mcr.microsoft.com/dotnet/core/sdk:2.2 to mcr.microsoft.com/dotnet/core/sdk:2.2 
+[36mINFO[0m[0000] Resolved base name mcr.microsoft.com/dotnet/core/aspnet:2.2 to mcr.microsoft.com/dotnet/core/aspnet:2.2 
+[36mINFO[0m[0000] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0000] Resolved base name mcr.microsoft.com/dotnet/core/sdk:2.2 to mcr.microsoft.com/dotnet/core/sdk:2.2 
+[36mINFO[0m[0000] Resolved base name mcr.microsoft.com/dotnet/core/aspnet:2.2 to mcr.microsoft.com/dotnet/core/aspnet:2.2 
+[36mINFO[0m[0000] Retrieving image manifest mcr.microsoft.com/dotnet/core/sdk:2.2 
+[36mINFO[0m[0000] Retrieving image manifest mcr.microsoft.com/dotnet/core/sdk:2.2 
+[36mINFO[0m[0000] Retrieving image manifest mcr.microsoft.com/dotnet/core/aspnet:2.2 
+[36mINFO[0m[0001] Retrieving image manifest mcr.microsoft.com/dotnet/core/aspnet:2.2 
+[36mINFO[0m[0001] Built cross stage deps: map[0:[/app]]        
+[36mINFO[0m[0001] Retrieving image manifest mcr.microsoft.com/dotnet/core/sdk:2.2 
+[36mINFO[0m[0001] Retrieving image manifest mcr.microsoft.com/dotnet/core/sdk:2.2 
+[36mINFO[0m[0001] Checking for cached layer 10.102.75.166:5000/todo/cache:d4dfde04e1f5994cb31c75d264ca7b8b7503e3f007a5db710acb1b553d12c054... 
+[36mINFO[0m[0001] No cached layer found for cmd COPY . .       
+[36mINFO[0m[0001] Unpacking rootfs as cmd COPY . . requires it. 
+[36mINFO[0m[0037] Taking snapshot of full filesystem...        
+[36mINFO[0m[0038] Resolving paths                              
+[36mINFO[0m[0048] COPY . .                                     
+[36mINFO[0m[0048] Resolving paths                              
+[36mINFO[0m[0048] Taking snapshot of files...                  
+[36mINFO[0m[0049] WORKDIR /src                                 
+[36mINFO[0m[0049] cmd: workdir                                 
+[36mINFO[0m[0049] Changed working directory to /src            
+[36mINFO[0m[0049] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0049] RUN dotnet restore                           
+[36mINFO[0m[0049] cmd: /bin/sh                                 
+[36mINFO[0m[0049] args: [-c dotnet restore]                    
+[36mINFO[0m[0049] Pushing layer 10.102.75.166:5000/todo/cache:d4dfde04e1f5994cb31c75d264ca7b8b7503e3f007a5db710acb1b553d12c054 to cache now 
+  Restore completed in 10.03 sec for /src/aspnetapp-testing/aspnetapp-testing.csproj.
+  Restore completed in 998.89 ms for /src/aspnetapp/aspnetapp.csproj.
+  Restore completed in 12.59 sec for /src/aspnetapp/aspnetapp.csproj.
+[36mINFO[0m[0075] Taking snapshot of full filesystem...        
+[36mINFO[0m[0076] Resolving paths                              
+[36mINFO[0m[0091] RUN dotnet publish aspnetapp/aspnetapp.csproj -c Release -o /app 
+[36mINFO[0m[0091] cmd: /bin/sh                                 
+[36mINFO[0m[0091] args: [-c dotnet publish aspnetapp/aspnetapp.csproj -c Release -o /app] 
+[36mINFO[0m[0091] Pushing layer 10.102.75.166:5000/todo/cache:f77ca585314050a2c917548ca53e20bf3e6f9c8f4fe1c8f6385d1adb3fcbccda to cache now 
 Microsoft (R) Build Engine version 16.0.450+ga8dc7f1d34 for .NET Core
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-  Restore completed in 200 ms for /src/aspnetapp/aspnetapp.csproj.
-  Restore completed in 86.11 ms for /src/aspnetapp/aspnetapp.csproj.
-2020/05/05 17:58:47 pushed blob: sha256:5616851fe27b1c0ba0fa3b87ccb1ef7c350a3007b4b325af11c8f50808172e97
-2020/05/05 17:58:48 10.111.50.107:5000/todo/cache:6397cf49e3f37e1b3331565f03edcfdb91cd0ef3dfc0534e2d893f0cdf8ef771: digest: sha256:79eed7f4c72a44919076e5e8e80b61e5a2efb3e91d36c962ccbbe8301184ad49 size: 429
+  Restore completed in 204.33 ms for /src/aspnetapp/aspnetapp.csproj.
+  Restore completed in 103.25 ms for /src/aspnetapp/aspnetapp.csproj.
   aspnetapp -> /src/aspnetapp/bin/Release/netcoreapp2.2/aspnetapp.dll
   aspnetapp -> /src/aspnetapp/bin/Release/netcoreapp2.2/aspnetapp.Views.dll
   aspnetapp -> /app/
-[36mINFO[0m[0138] Taking snapshot of full filesystem...        
-[36mINFO[0m[0150] ignoring socket CoreFxPipe_root.hmO7SWqwEv4UbpiDCHUUDAaJc, not adding to tar 
-[36mINFO[0m[0150] ignoring socket CoreFxPipe_root.F.mBSPmB68F+, not adding to tar 
-[36mINFO[0m[0150] RUN dotnet test --logger "trx;LogFileName=./aspnetapp.trx" 
-[36mINFO[0m[0150] cmd: /bin/sh                                 
-[36mINFO[0m[0150] args: [-c dotnet test --logger "trx;LogFileName=./aspnetapp.trx"] 
-[36mINFO[0m[0150] Pushing layer 10.111.50.107:5000/todo/cache:8e16613e826437f681e16c1e29b40f62110f630e1ee6ab7641a1b4d6f7447ab4 to cache now 
-2020/05/05 17:59:07 pushed blob: sha256:a76948ac1f1d5676ad11df4b56a5ee9c575d861c3a9a320f0f1d749beee85b26
-2020/05/05 17:59:07 pushed blob: sha256:aacb7b467695b57ad7e8a3441d56f0757e09e845b6363f73c0b9cc83dd42bb91
-2020/05/05 17:59:08 10.111.50.107:5000/todo/cache:8e16613e826437f681e16c1e29b40f62110f630e1ee6ab7641a1b4d6f7447ab4: digest: sha256:5d48be072e1b158604f3d1d0a876c3817b4b7237f4bd6ede2c35b2dcdfc84168 size: 428
+[36mINFO[0m[0108] Taking snapshot of full filesystem...        
+[36mINFO[0m[0108] Resolving paths                              
+[36mINFO[0m[0116] ignoring socket CoreFxPipe_root.F.mBSPmB68F+, not adding to tar 
+[36mINFO[0m[0116] ignoring socket CoreFxPipe_root.hmO7SWqwEv4UbpiDCHUUDAaJc, not adding to tar 
+[36mINFO[0m[0116] Pushing layer 10.102.75.166:5000/todo/cache:1a9c7e92d8e160e9e4e26e6f682d5ebc9d14c5aebc39c0609936039d25ca9d82 to cache now 
+[36mINFO[0m[0116] RUN dotnet test --logger "trx;LogFileName=./aspnetapp.trx" 
+[36mINFO[0m[0116] cmd: /bin/sh                                 
+[36mINFO[0m[0116] args: [-c dotnet test --logger "trx;LogFileName=./aspnetapp.trx"] 
 Test run for /src/aspnetapp-testing/bin/Debug/netcoreapp2.2/aspnetapp-testing.dll(.NETCoreApp,Version=v2.2)
 Microsoft (R) Test Execution Command Line Tool Version 16.0.1
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
 Starting test execution, please wait...
-Results File: /src/aspnetapp-testing/TestResults/./aspnetapp_2020-05-05_17-59-17-064.trx
+Results File: /src/aspnetapp-testing/TestResults/./aspnetapp_2020-05-05_20-01-38-162.trx
 
 Total tests: 1. Passed: 1. Failed: 0. Skipped: 0.
 Test Run Successful.
-Test execution time: 3.2827 Seconds
-[36mINFO[0m[0160] Taking snapshot of full filesystem...        
-[36mINFO[0m[0160] Adding whiteout for /tmp/.dotnet/shm/session1/c8f4c8a536e543bc99cbb2471052d4fa 
-[36mINFO[0m[0160] Adding whiteout for /tmp/VBCSCompiler/AnalyzerAssemblyLoader/c8f4c8a536e543bc99cbb2471052d4fa 
-[36mINFO[0m[0172] ignoring socket CoreFxPipe_root.F.mBSPmB68F+, not adding to tar 
-[36mINFO[0m[0172] Pushing layer 10.111.50.107:5000/todo/cache:cdb0677e45b31ef489c36927357d9c64c76684497fb3ee6e00aae9229f50c638 to cache now 
-2020/05/05 17:59:29 pushed blob: sha256:947cb4663b889f11c4e708689c5ac45a9ed15574c823a439586dee86c534f5c4
-2020/05/05 17:59:29 pushed blob: sha256:ba6e3301564ccb7a62b737cbaaea5ffa415cf70163b7bbd2fb611d6e912c169c
-2020/05/05 17:59:29 10.111.50.107:5000/todo/cache:cdb0677e45b31ef489c36927357d9c64c76684497fb3ee6e00aae9229f50c638: digest: sha256:e42b7a78babbfaefd48a339bf74d564f8440417ce5065dc5233d2008128678d6 size: 427
-[36mINFO[0m[0172] Storing source image from stage 0 at path /kaniko/stages/0 
-[36mINFO[0m[0221] Deleting filesystem...                       
-[36mINFO[0m[0223] Downloading base image mcr.microsoft.com/dotnet/core/aspnet:2.2 
-2020/05/05 18:00:20 No matching credentials were found, falling back on anonymous
-[36mINFO[0m[0223] Error while retrieving image from cache: getting file info: stat /workspace/sha256:ae9a94a778b4c4656f036e1dd858d6c972f6ad4423bdf9c5022e16f28fee5cf9: no such file or directory 
-[36mINFO[0m[0223] Downloading base image mcr.microsoft.com/dotnet/core/aspnet:2.2 
-2020/05/05 18:00:20 No matching credentials were found, falling back on anonymous
-[36mINFO[0m[0223] Skipping unpacking as no commands require it. 
-[36mINFO[0m[0223] Taking snapshot of full filesystem...        
-[36mINFO[0m[0223] COPY --from=builder /app .                   
-[36mINFO[0m[0223] Taking snapshot of files...                  
-[36mINFO[0m[0224] ENTRYPOINT ["dotnet", "aspnetapp.dll"]       
-[36mINFO[0m[0224] No files changed in this command, skipping snapshotting. 
-2020/05/05 18:00:20 pushed blob: sha256:2731cf34fbb5cb933ac50f9b763fdf085d431fcdda6c2621891abcfc0b3ac5d3
-2020/05/05 18:00:20 pushed blob: sha256:c0260801a4a22944d461be6b73112881849c21affc01ec0de63a50a522728a86
-2020/05/05 18:00:21 pushed blob: sha256:f3d4c41a4fd13f35c0b46f19a4e27845f4695163cc7174d908ff84836bbc2f5a
-2020/05/05 18:00:21 pushed blob: sha256:804555ee037604c40de144f9f8da0d826d38db82f15d74cded32790fe279a8f6
-2020/05/05 18:00:21 pushed blob: sha256:970251047358aea56ba6db6975b14ff12470b75de0c2477f4445240ddd727fd4
-2020/05/05 18:00:23 pushed blob: sha256:bd391c46585f9f8d84992bbaa9087189148c1601968eaaf097d5b3ed60840e5e
-2020/05/05 18:00:23 10.111.50.107:5000/vpsgetcom/aspnet-app:0.0.14: digest: sha256:8e90d07f6bd573a5e42b56ec72c3613fecaacf10806631be8a190573f131deb5 size: 1086
+Test execution time: 3.3010 Seconds
+[36mINFO[0m[0126] Taking snapshot of full filesystem...        
+[36mINFO[0m[0126] Resolving paths                              
+[36mINFO[0m[0134] ignoring socket CoreFxPipe_root.F.mBSPmB68F+, not adding to tar 
+[36mINFO[0m[0134] Pushing layer 10.102.75.166:5000/todo/cache:a9c029039e604fb0b0b6e9c03688caf5388f4325d4bef7d2320c92ebd7532f89 to cache now 
+[36mINFO[0m[0134] Saving file /app for later use               
+[36mINFO[0m[0134] Deleting filesystem...                       
+[36mINFO[0m[0136] Retrieving image manifest mcr.microsoft.com/dotnet/core/aspnet:2.2 
+[36mINFO[0m[0136] Retrieving image manifest mcr.microsoft.com/dotnet/core/aspnet:2.2 
+[36mINFO[0m[0136] Checking for cached layer 10.102.75.166:5000/todo/cache:723d112b599959d0f7d7b1ca48e8b1d1174e75761bb4005212a23fa65c639571... 
+[36mINFO[0m[0136] No cached layer found for cmd COPY --from=builder /app . 
+[36mINFO[0m[0136] Unpacking rootfs as cmd COPY --from=builder /app . requires it. 
+[36mINFO[0m[0144] Taking snapshot of full filesystem...        
+[36mINFO[0m[0144] Resolving paths                              
+[36mINFO[0m[0145] COPY --from=builder /app .                   
+[36mINFO[0m[0145] Resolving paths                              
+[36mINFO[0m[0145] Taking snapshot of files...                  
+[36mINFO[0m[0145] Pushing layer 10.102.75.166:5000/todo/cache:723d112b599959d0f7d7b1ca48e8b1d1174e75761bb4005212a23fa65c639571 to cache now 
+[36mINFO[0m[0145] ENTRYPOINT ["dotnet", "aspnetapp.dll"]       
+[36mINFO[0m[0145] No files changed in this command, skipping snapshotting. 
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-sfd4x-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+Showing logs for build [32mvpsgetcom-aspnet-app-master-dt48v-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
 no CVE provider running in the current ** namespace so skip adding image to be analysed
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-sfd4x-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Showing logs for build [32mvpsgetcom-aspnet-app-master-dt48v-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
 Converted /workspace/source/charts/aspnet-app to an unshallow repository
-Generating change log from git ref 0550c4606ea9111d8c673cd1ec544bcac2470f95 => fb22e0d8b5e86442b5845df069e3225746b251ee
+Generating change log from git ref 02cc01fb916427ce3ecd12d767f68227aac7d33f => a1ce584107f2e5f9a4b11d2fd5a8d5f51d447cac
 Associating user x-0 in users.jenkins.io with email andrii.kyianov@gmail.com to git GitProvider user with login -0 as emails match
 Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
-WARNING: Failed to enrich commit 0acb1b31ef7229e703dbc796b156476deb5c9c61 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+WARNING: Failed to enrich commit 0813f197e5f9f134576f001a7fd043d86941f42e with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
 Fi***ng issues in commit messages using git format
-WARNING: Failed to enrich commit dcd034ee5c36c7be98388bb7f3652b4fc0ca604a with issues: users.jenkins.io "x-0" already exists
-WARNING: Failed to enrich commit dcd034ee5c36c7be98388bb7f3652b4fc0ca604a with issues: users.jenkins.io "x-0" already exists
-WARNING: Failed to enrich commit 4500b5ceff88318d6576dce0ca54c96dfbb2e556 with issues: users.jenkins.io "x-0" already exists
-WARNING: Failed to enrich commit 4500b5ceff88318d6576dce0ca54c96dfbb2e556 with issues: users.jenkins.io "x-0" already exists
-WARNING: Failed to enrich commit 27c98a99bbe0840d637b1eba4856847dc6d44fec with issues: users.jenkins.io "x-0" already exists
-WARNING: Failed to enrich commit 27c98a99bbe0840d637b1eba4856847dc6d44fec with issues: users.jenkins.io "x-0" already exists
-WARNING: No release found for vpsgetcom/aspnet-app and tag v0.0.14 so creating a new release
-Updated the release information at https://github.com/vpsgetcom/aspnet-app/releases/tag/v0.0.14
+WARNING: No release found for vpsgetcom/aspnet-app and tag v0.0.21 so creating a new release
+Updated the release information at https://github.com/vpsgetcom/aspnet-app/releases/tag/v0.0.21
 generated: /workspace/source/charts/aspnet-app/templates/release.yaml
-Created Release aspnet-app-0-0-14 resource in namespace **
-Updating PipelineActivity vpsgetcom-aspnet-app-master-1 with version 0.0.14
-Updated PipelineActivities vpsgetcom-aspnet-app-master-1 with release notes URL: https://github.com/vpsgetcom/aspnet-app/releases/tag/v0.0.14
+Created Release aspnet-app-0-0-21 resource in namespace **
+Updating PipelineActivity vpsgetcom-aspnet-app-master-1 with version 0.0.21
+Updated PipelineActivities vpsgetcom-aspnet-app-master-1 with release notes URL: https://github.com/vpsgetcom/aspnet-app/releases/tag/v0.0.21
 
-Showing logs for build [32mvpsgetcom-aspnet-app-master-sfd4x-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+Showing logs for build [32mvpsgetcom-aspnet-app-master-dt48v-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
 Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
 Successfully added Helm repository storage.googleapis.com.
 Adding missing Helm repo: chartmuseum.**.138.201.58.182.nip.io http://chartmuseum.**.138.201.58.182.nip.io
 Successfully added Helm repository chartmuseum.**.138.201.58.182.nip.io.
-Uploading chart file aspnet-app-0.0.14.tgz to http://chartmuseum.**.138.201.58.182.nip.io/api/charts
-Received 401 response: {"error":"unauthorized"}
-error: Failed to post chart to http://chartmuseum.**.138.201.58.182.nip.io/api/charts due to response 401: {"error":"unauthorized"}
-[31m
-Pipeline failed on stage 'from-build-pack' : container 'step-promote-helm-release'. The execution of the pipeline has stopped.[0m
+Uploading chart file aspnet-app-0.0.21.tgz to http://chartmuseum.**.138.201.58.182.nip.io/api/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32mvpsgetcom-aspnet-app-master-dt48v-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+Promoting app aspnet-app version 0.0.21 to namespace **-staging
+WARNING: 
+Created Pull Request: https://github.com/vpsgetcom/environment-stealervolcano-staging/pull/1
+Added label updatebot to Pull Request https://github.com/vpsgetcom/environment-stealervolcano-staging/pull/1
+got git provider status pe***ng from PR https://github.com/vpsgetcom/environment-stealervolcano-staging/pull/1
+got git provider status pe***ng from PR https://github.com/vpsgetcom/environment-stealervolcano-staging/pull/1
+got git provider status pe***ng from PR https://github.com/vpsgetcom/environment-stealervolcano-staging/pull/1
+Pull Request https://github.com/vpsgetcom/environment-stealervolcano-staging/pull/1 is merged at sha 0155a4b165b0c7f4b1cf8d9728fe4ec0c82acde6
+Pull Request merged but we are not waiting for the update pipeline to complete!
+WARNING: Could not find the service URL in namespace **-staging for names aspnet-app, **-aspnet-app, **-staging-aspnet-app
