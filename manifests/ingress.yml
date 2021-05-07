@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "ndiaksminitest-9fac"
+    labels:
+        app: "ndiaksminitest-9fac"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: ndi-aks-mini-test1-ndiaksminitest-9fac.6c44cfd589d44e8293ce.westeurope.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "ndiaksminitest-9fac"
+                servicePort: 80
