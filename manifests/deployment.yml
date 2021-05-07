@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "ndiaksminitest-9fac"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "ndiaksminitest-9fac"
+  template:
+    metadata:
+      labels:
+        app: "ndiaksminitest-9fac"
+    spec:
+      containers:
+        - name: "ndiaksminitest-9fac"
+          image: "aksctreg.azurecr.io/ndiaksminitest"
+          ports:
+          - containerPort: 80
